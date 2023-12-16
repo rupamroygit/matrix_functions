@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define ROW 2
+#define ROW 3
 #define COL 3
 
 /*To calculate addition, subtraction and multiplication of 2-
@@ -32,4 +32,6 @@ void input(int arr[ROW][COL])
 void main()
 {
     int array[ROW][COL];
+    input(array);
+    display(array);
 }
