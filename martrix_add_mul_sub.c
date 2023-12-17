@@ -29,9 +29,30 @@ void input(int arr[ROW][COL])
         }
     }
 }
+int addtion(int arr1[ROW][COL],int arr2[COL][ROW],int arrsum[ROW][COL])
+{
+    int i,j;
+    for(i=0;i<ROW;i++)
+    {
+        for(j=0;j<COL;j++)
+        {
+            arrsum[i][j]=arr1[i][j]+arr2[i][j];
+        }
+    }
+    return arrsum[ROW][COL];
+}
+void matrix_multiply(int arr1[ROW][COL],int arr2[ROW][COL],int arrmul[ROW][COL])
+{
+    
+}
 void main()
 {
-    int array[ROW][COL];
-    input(array);
-    display(array);
+    int array1[ROW][COL],array2[ROW][COL],arrstore[ROW][COL];
+    input(array1);
+    input(array2);
+    display(array1);
+    display(array2);
+    //arrstore[ROW][COL]=addtion(array1,array2);
+    addtion(array1,array2,arrstore);
+    display(arrstore);
 }
