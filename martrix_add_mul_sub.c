@@ -28,7 +28,7 @@ void input(int arr[ROW][COL])
     {
         for(j=0;j<COL;j++)
         {
-            printf("Enter array %d&%d Element\n: ",i,j);
+            printf("Enter array %d&%d Element\n: ",i+1,j+1);
             scanf("%i",&arr[i][j]);
         }
     }
