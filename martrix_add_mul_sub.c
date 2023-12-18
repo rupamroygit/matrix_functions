@@ -48,6 +48,7 @@ void matrix_multiply(int arr1[ROW][COL],int arr2[ROW][COL],int arrmul[ROW][COL])
     {
         for(j=0;j<COL;j++)
         {
+            arrmul[i][j]=0;
             for(k=0;k<COL;k++)
             {
                 arrmul[i][j]+=arr1[i][k]*arr2[k][j];
